@@ -1,0 +1,20 @@
+export const statusmap = new Map()
+    .set(0, "Vous êtes le seul joueur connecté, veuillez attendre un autre joueur...")
+    .set(1, "Vous êtes 2 joueurs connectés, vous pouvez jouer")
+    .set(2, "2 joueurs sont déjà en train de jouer, veuillez patienter")
+    .set(3, "Votre adversaire s'est déconnecté, vous remportez donc la partie")
+
+export const matchmap = new Map()
+    .set(1, "Won : +1")
+    .set(0, "Draw : +0")
+    .set(-1, "Lost : +0")
+
+export const scoremap = new Map()
+    .set(1, 1)
+    .set(0, 0)
+    .set(-1, 0)
+
+export const resultsmap = new Map()
+    .set(1, "Félicitations, vous avez remporté la partie !")
+    .set(0, "Vous êtes à égalité, le prochain à remporter une manche remportera la partie !")
+    .set(-1, "Vous avez perdu la partie, votre adversaire a plus de points...")

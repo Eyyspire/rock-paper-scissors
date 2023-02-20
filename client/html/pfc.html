@@ -1,0 +1,102 @@
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="icon shortcut" type="image/x-icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="socket.io/socket.io.js"></script>
+
+</head>
+
+
+    <body>
+
+        <a class="page-link" href = "./"> 
+            Home </a>
+
+        <h1>
+            Pierre-feuille-ciseaux
+        </h1>
+
+        <h4>
+            Remportez plus de coups que votre adversaire sur 5 manches !
+        </h4>
+
+
+
+        <div class="box" id="move-box" >
+            <figure class="move">
+                <img class="move" src="../images/rock.png"/>
+                <figcaption> <button class="play-button"> </button> </figcaption>
+            </figure>
+            <figure class="move">
+                <img class="move" src="../images/paper.png"/>
+                <figcaption> <button class="play-button"> </button> </figcaption>
+            </figure>
+            <figure class="move">
+                <img class="move" src="../images/scissors.png"/>
+                <figcaption> <button class="play-button"> </button> </figcaption>
+            </figure>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div id="rounds">
+            <span> Manche actuelle : </span>
+            <span id="current-round">0</span>
+            <span id="total-round"> /5</span>
+        </div>
+
+        <div id="current-info">
+
+        </div>
+
+
+        <div class="box" >
+            <div class="score-container">
+                <span class="score-legend">Votre score :</span> 
+                <div class="score-box score-1">0</div>
+                <span class="move-score"></span>
+            </div>
+            <figure class="move">
+                <img src = "" id="played-move">
+                <figcaption>Votre coup</figcaption>
+            </figure>
+            <figure class="move">
+                <img src = "" id="opponent-move">
+                <figcaption>Coup de l'adversaire</figcaption>
+            </figure>
+            <div class="score-container">
+                <span class="score-legend">Score de l'adversaire : </span> 
+                <div class="score-box score-0">0</div>
+                <span class="move-score"></span>
+            </div>
+        </div>
+
+        <div id="results">
+
+        </div>
+
+        <div id="connexion-status">
+
+        </div>
+
+        <div id="advice">
+
+        </div>
+
+        <div id="game-results">
+
+        </div>
+
+        <button id="new-game">
+            Commencer une nouvelle partie 
+        </button>
+
+        
+        
+
+
+
+    </body>
